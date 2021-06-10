@@ -86,7 +86,7 @@ class Convos
         'content'      => $validated['content']
       ]);
 
-      return redirect('/admin/messages/convo?convo_id='.$validated['message_id']);
+      return redirect(request()->getSchemeAndHttpHost().'/admin/messages/convo?convo_id='.$validated['message_id']);
   }
 
   protected static function read($convo_msg_id)

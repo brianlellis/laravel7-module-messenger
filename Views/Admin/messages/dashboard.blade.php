@@ -14,7 +14,7 @@
       <td>{{$conversation->title}}</td>
       <td>From: @if(!$other_user) System @endif</td>
       <td>
-        <a class="btn btn-primary" href="/admin/messages/convo?convo_id={{$conversation->id}}">View</a>
+        <a class="btn btn-primary" href="@url('/admin/messages/convo?convo_id='){{$conversation->id}}">View</a>
       </td>
     </tr>
   @endforeach
